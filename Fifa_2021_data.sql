@@ -7,6 +7,7 @@ ALTER TABLE FIFA_21.dbo.fifa21_raw_data
 DROP COLUMN Name,PhotoURL,PlayerURL,LOAN_DATE_END;
    
 --3.---Replace unwanted characters in multiple column
+BEGIN TRANSACTION;
 UPDATE FIFA_21.dbo.fifa21_raw_data
 SET Contract=REPLACE(Contract,'~','-'),
 Value=REPLACE(Value,'M',''),
@@ -15,6 +16,7 @@ Release_Clause=REPLACE(Release_Clause,'â‚¬',''),
 IR=REPLACE(IR,'?',''),
 W_F=REPLACE(W_F,'?',''),
 SM=REPLACE(SM,'?','');
+COMMIT;
 
 --4.---CHECK FOR DUPLICATE ROWS 
 SELECT Players_name,Club,Nationality

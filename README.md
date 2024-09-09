@@ -18,14 +18,6 @@ Table overview: This allows us to visualize all the columns and rows to get an o
 
 3. Checking and removing duplicate rows: Duplicate entries can lead to skewed results and analysis. This query groups the data by players_name, club, and nationality, then checks if any combination appears more than once. The duplicated rows identified were removed with a Common Table Expression (CTE), leveraging the ROW_NUMBER() function to assign a unique row number to each duplicate.
 
----DELETE FOUND DUPLICATE
-WITH CTE AS (
-    SELECT Players_name,Club,Nationality,
-           ROW_NUMBER() OVER (PARTITION BY Players_name,Club,Nationality 
-ORDER BY (SELECT NULL)) AS RN
-    FROM FIFA_21.dbo.fifa21_raw_data)
-DELETE FROM CTE
-WHERE RN > 1;
 
 4. Displacing similar unwanted characters for multiple columns: Some unwanted characters like "?", "â‚¬" were found among the count of "Injury reserve, contract duration", and some other columns and were removed with an update statement for multiple columns.
 

@@ -10,9 +10,11 @@ Just as neglecting to sort your beans can lead to a meal full of unpleasant surp
 In this post, I will dive into the messy world Kaggle's FIFA 21 raw data(attached fifa_21_raw_data.csv file) derived from web scrapping and needing some serious tidying up. Join me as we transform this data into a refined, insightful resource, ready for meaningful analysis.
 
 DATA PREPARATION
+
 Let me provide some context, If this is your first time reading my article. The SQL used for this analysis is Microsoft SQL Server Management Studio (MSSQL), and the file used is in Comma Separated Value (CSV) format. The first step involves creating a database for your table and then import the file into the database. During the import process, you will need to declare the appropriate data types and determine whether to allow null values for specific columns.
 
 DATA ANALYSIS
+
 1. Table overview: This allows us to visualize all the columns and rows to get an overview of the data before any cleaning actions are taken. The table contains player analysis records with 76 columns and 18,852 rows. The screenshot of the result does not display the entire table. If you're interested, you can download and preview the full data.
 
 
@@ -27,5 +29,6 @@ DATA ANALYSIS
 
 
 CONCLUSION
+
 Data cleaning is more than just a preparatory step in data analysis, it is the key to unlocking the full potential of any dataset. By meticulously refining the FIFA 2021 raw data, I removed unnecessary columns, addressed duplicates, and eliminated unwanted characters. These processes ensured that the data was not only clean and accurate but primed for insightful analysis. Transforming chaotic raw data into a well-organized, structured format, paves the way for more effective analysis and robust model-building.
 Just as data cleaning refines raw data for precision, sorting beans ensures uniformity and quality in a meal. Both processes, while distinct, are essential in delivering clean, reliable outcomes in their respective domains.

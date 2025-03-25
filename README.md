@@ -4,6 +4,7 @@ This project focuses on cleaning FIFA 2021 messy data-derived web scrapping.
 
 
 INTRODUCTION
+
 Have you ever been caught off guard by biting into a stone while enjoying a plate of beans?
 Just as neglecting to sort your beans can lead to a meal full of unpleasant surprises, skipping data cleaning can leave you with a messy, unreliable dataset. Think of data cleaning is like sorting beans, you meticulously inspect and remove the bad ones (errors or duplicates), group them by size or type (organize data), and discard any foreign objects like stones (filter out irrelevant or noisy data). Both processes ensure that only clean, reliable results remain, whether in your meal or your analysis.
 In this post, I will dive into the messy world Kaggle's FIFA 21 raw data(attached fifa_21_raw_data.csv file) derived from web scrapping and needing some serious tidying up. Join me as we transform this data into a refined, insightful resource, ready for meaningful analysis.
